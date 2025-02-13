@@ -1,0 +1,49 @@
+# Ignore build artifacts
+/bin/
+/build/
+out/
+target/
+
+# Ignore IntelliJ IDEA-specific files
+.idea/
+*.iml
+*.iws
+
+# Ignore Eclipse-specific files
+/.classpath
+/.project
+/.settings/
+
+# Ignore Gradle-specific files
+/.gradle/
+/gradle/
+/build/
+
+# Ignore Maven-specific files
+/.mvn/
+.mvn/
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+release.properties
+
+# Ignore logs and temporary files
+*.log
+hs_err_pid*
+.DS_Store
+
+# Ignore compiled Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore JavaFX-specific caches (if applicable)
+javafx-sdk/
+jfxrt.jar
+
+# Ignore OS-specific files
+Thumbs.db
+*.swp
+*.swo
