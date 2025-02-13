@@ -103,12 +103,12 @@
                             </textFill>
                         </Label>
                         <Pane prefHeight="103.0" prefWidth="207.0" />
-                        <TextField prefHeight="45.0" prefWidth="215.0" promptText="Search...">
+                        <TextField fx:id="tfSearch" onAction="#onEnter" prefHeight="45.0" prefWidth="215.0" promptText="Search...">
                             <font>
                                 <Font size="20.0" />
                             </font>
                         </TextField>
-                        <Button fx:id="btnSearch" mnemonicParsing="false" styleClass="transparent">
+                        <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#handleBtnSearch" styleClass="transparent">
                             <graphic>
                                 <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -144,17 +144,17 @@
                         <Font name="Content Bold" size="20.0" />
                      </font>
                   </Label>
-                            <Label prefHeight="71.0" prefWidth="70.0" text="ID" textAlignment="CENTER" textFill="#575757">
+                            <Label fx:id="lblSortID" onMouseClicked="#sortByID" prefHeight="71.0" prefWidth="70.0" text="ID" textAlignment="CENTER" textFill="#575757">
                                 <font>
                                     <Font name="Content Bold" size="20.0" />
                                 </font>
                             </Label>
-                            <Label prefHeight="46.0" prefWidth="141.0" text="First Name" textAlignment="CENTER" textFill="#575757">
+                            <Label fx:id="lblSortFirstName" onMouseClicked="#sortByFirstName" prefHeight="46.0" prefWidth="141.0" text="First Name" textAlignment="CENTER" textFill="#575757">
                                 <font>
                                     <Font name="Content Bold" size="20.0" />
                                 </font>
                             </Label>
-                            <Label prefHeight="46.0" prefWidth="141.0" text="Last Name" textAlignment="CENTER" textFill="#575757">
+                            <Label fx:id="lblSortLastName" onMouseClicked="#sortByLastName" prefHeight="46.0" prefWidth="141.0" text="Last Name" textAlignment="CENTER" textFill="#575757">
                                 <font>
                                     <Font name="Content Bold" size="20.0" />
                                 </font>
